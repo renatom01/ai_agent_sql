@@ -1,4 +1,5 @@
 # Langchain SQL Agent Bot
+![Screen Shot 2023-11-21 at 23 35 31](https://github.com/renatom01/ai_agent_sql/assets/80773401/b9f44557-2bdc-4f21-9d7a-72f9d1ad97c6)
 
 This Python script utilizes the Langchain library to interact with a SQL database and answer user queries. The Langchain library integrates natural language processing capabilities with SQL database interactions, allowing users to ask questions and receive relevant information from the connected database.
 
