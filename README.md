@@ -7,13 +7,13 @@ This Python script utilizes the Langchain library to interact with a SQL databas
 1. **Clone the repository:**
 
    ```bash
-   git clone https: XXXXXXXXX
+   git clone https://github.com/renatom01/ai_agent_sql.git
    ```
 
-2. **Navigate to the project directory:**
+2. **Create a directory and navigate to it:**
 
    ```bash
-   cd langchaXXXXXXXXX
+   cd directory_created
    ```
 
 3. **Install the required dependencies using `pip`:**
@@ -41,10 +41,10 @@ This Python script utilizes the Langchain library to interact with a SQL databas
 2. **Enter a question when prompted:**
 
    ```bash
-   User: How many customers do we have in the database?
+   User: "How many customers do we have in the database?"
    ```
 
-3. The LLM will based on the question provided, if related to policies on return and refund it provides those informations, for question regarding the data it utilizes Langchain to query the connected SQLite database (Chinook.db) and provide an answer based on the given question.
+3. The LLM will answer based on the question provided, if it's related to policies on return and refund it provides those informations, for question regarding the data it utilizes Langchain to query the connected SQLite database (Chinook.db) and provide an answer based on the given question.
 
 ## Configuration
 
@@ -52,9 +52,20 @@ This Python script utilizes the Langchain library to interact with a SQL databas
   Ensure that you have a valid OpenAI API key and set it in the `.env` file.
 
 - **Database Connection:**
-  The script is configured to connect to an SQLite database named `Chinook.db`. Modify the `SQLDatabase.from_uri` line in the script if your database has a different name or location.
+  The script is configured to connect to an SQLite database named `Chinook.db`. Modify the `SQLDatabase.from_uri` line in the script if your database has a different name or location. To details on database installation: https://database.guide/2-sample-databases-sqlite/
 
 ## Dependencies
 
 - Langchain
 - dotenv
+
+## Demonstration
+
+A short demonstration of the chatbot is available at: https://youtu.be/NjisPC3nPbc
+
+## Example of Questions
+
+- What is the maximum date to return a product?
+- What are the refund policies?
+- What is the status on invoice id 262? (Any Invoice Id can be provided)
+- Questions related to the database, what are the most sold genre or country.
